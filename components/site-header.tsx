@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { Activity, Menu, Search, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -47,6 +48,7 @@ export function SiteHeader() {
           >
             <Search className="h-4 w-4" aria-hidden="true" />
           </button>
+          <ThemeToggle />
           <Button asChild className="hidden rounded-full sm:inline-flex">
             <a href="#book">Book Now</a>
           </Button>
